@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits Website</title>
+    <!-- =======Tailwind Daisy========= -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ============ Google Fonts ============== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        .latofont{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="latofont">
+    <!-- =======Header Sections======= -->
+    <header class="container mx-auto px-8 py-4 bg-[#F85559] rounded-full my-12">
+
+      <div>
+        <div class="md:hidden flex items-center justify-between">
+          <div class="dropdown px-4">
+            <label tabindex="0" class="btn btn-ghost">
+              <img src="./memue.png" alt="">
+            </label>
+            <ul tabindex="" class="menu menu-sm dropdown-content mt-3 z-[1] shadow bg-base-100 rounded-box w-52">
+              <li><a>Item 1</a></li>
+              <li><a>Item 3</a></li>
+              <li><a>Item 1</a></li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="w-7"><a href=""><img src="./images/logo.png" alt=""></a></div>
+            <div><h3 class="text-xl font-bold">Fruit Burst</h3></div>
+          </div>
+        </div>
+<!-- ============ Responsive for md: and Lg: sections=========== -->
+        <div class="flex justify-between  items-center hidden md:flex">
+          <div class="">
+            <ul class=" md:flex items-center gap-5">
+              <li><a>Item</a></li>
+              <li><a>Item</a></li>
+              <li><a>Item</a></li>
+              <li><a>Item</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <div class="w-7"><a href=""><img src="./images/logo.png" alt=""></a></div>
+              <div><h3 class="text-xl font-bold">Fruit Burst</h3></div>
+            </div>
+          </div>
+          <div class="relative">
+            <input type="search" class=" outline-0 border-0 py-2 pr-8 pl-4 rounded-full " type="text" placeholder="Search">
+            <div class="absolute right-4 top-2 "><button type="submit"><img src="./Frame.png" alt=""></button></div>
+          </div>
+        </div>
+        </div>
+
+    </header>
+    <!-- ===========Main Sections -->
+    <Main>
+
+    </Main>
+    <!-- =========Footer Sections========== -->
+    <footer>
+
+    </footer>
+</body>
+
+</html>
