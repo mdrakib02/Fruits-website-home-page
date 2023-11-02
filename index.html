@@ -24,7 +24,7 @@
     <!-- =======Header Sections======= -->
     <header class="container mx-auto my-12 ">
       <!-- ========= Nav-sections=============== -->
-      <section class=" bg-[#F85559] rounded-full px-8 py-4">
+      <section class=" bg-[#F85559] rounded-full px-8 p-2 md:py-4">
         <div>
           <div class="md:hidden flex items-center justify-between">
             <div class="dropdown px-4">
@@ -32,10 +32,10 @@
                 <img src="./memue.png" alt="">
               </label>
               <ul tabindex="" class="menu menu-sm dropdown-content mt-3 z-[1] shadow bg-base-100 rounded-box w-52">
-                <li><a>Item 1</a></li>
-                <li><a>Item 3</a></li>
-                <li><a>Item 1</a></li>
-                <li><a>Item 3</a></li>
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
               </ul>
             </div>
             <div class="flex items-center gap-2">
@@ -46,11 +46,11 @@
   <!-- ============ Responsive for md: and Lg: sections=========== -->
           <div class="flex justify-between  items-center hidden md:flex">
             <div class="">
-              <ul class=" md:flex items-center gap-5">
-                <li><a>Item</a></li>
-                <li><a>Item</a></li>
-                <li><a>Item</a></li>
-                <li><a>Item</a></li>
+              <ul class=" md:flex items-center gap-5 text-base font-normal">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
               </ul>
             </div>
             <div>
@@ -70,7 +70,7 @@
 <section class="relative">
 <!-- ==================== Slide Sections================= -->
 <section class="my-4 md:my-12 lg:my-24">
-<div class="carousel w-full">
+<div class="carousel w-full rounded-md">
     <!-- ===================Slide One===================== -->
     <div id="slide1" class="hero carousel-item relative w-full h-[600px] " 
     style="background-image: url(./images/banner4.png) ;">
@@ -154,8 +154,180 @@
 </section>
     </header>
     <!-- ===========Main Sections -->
-    <Main>
-      
+    <Main class="container mx-auto">
+<!-- ===========Deal of the day============== -->
+      <section class="flex flex-col md:flex-row text-center md:text-start md:justify-between items-center gap-y-4 md:gap-y-6 p-4 md:py-12 lg:py-24">
+        <div class="space-y-4">
+          <h3 class="text-2xl  md:text-5xl font-bold">Deal of the day</h3>
+          <p class="w-96">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:15;"></span>
+            </span>
+            days
+          </div> 
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:10;"></span>
+            </span>
+            hours
+          </div> 
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:24;"></span>
+            </span>
+            min
+          </div> 
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:26;">
+              </span>
+            </span>
+            sec
+          </div>
+        </div>
+        </div>
+      </section>
+
+<!-- ========== Card Sections============ -->
+      <section>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-12 text-center justify-center items-center">
+        <!-- ===Card One==== -->
+        <div class="flex flex-col justify-center items-center px-6 py-3 space-y-5 shadow-sm">
+          <div><img src="./images/fruit6.png" alt="">
+            <h4 class="text-xl font-bold border-b-2 py-3">12.90$ - 18.85$</h4>
+          </div>
+          
+          <div class="">
+            <p>Apples</p>
+          <div class="rating py-4">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          </div>
+          <p class="text-red-500">Details</p>
+          </div>
+        </div>
+        <!-- ===Card Two==== -->
+        <div class="flex flex-col justify-center items-center px-6 py-3 space-y-5 shadow-sm">
+          <div><img src="./images/fruit7.png" alt="">
+            <h4 class="text-xl font-bold border-b-2 py-3">12.90$ - 18.85$</h4>
+          </div>
+          
+          <div>
+            <p>Apples</p>
+          <div class="rating py-4">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          </div>
+          <p class="text-red-500">Details</p>
+          </div>
+        </div>
+        <!-- ===Card Three==== -->
+        <div class="flex flex-col justify-center items-center px-6 py-3 space-y-5 shadow-sm">
+          <div><img src="./images/fruit8.png" alt="">
+            <h4 class="text-xl font-bold border-b-2 py-3">12.90$ - 18.85$</h4>
+          </div>
+          
+          <div>
+            <p>Apples</p>
+          <div class="rating py-4">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          </div>
+          <p class="text-red-500">Details</p>
+          </div>
+        </div>
+        <!-- ===Card Four==== -->
+        <div class="flex flex-col justify-center items-center px-6 py-3 space-y-5 shadow-sm">
+          <div><img src="./images/fruit9.png" alt="">
+            <h4 class="text-xl font-bold border-b-2 py-3">12.90$ - 18.85$</h4>
+          </div>
+          
+          <div>
+            <p>Apples</p>
+          <div class="rating py-4">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          </div>
+          <p class="text-red-500">Details</p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="flex justify-center my-9">
+        <button class="btn btn-active text-white bg-[#F85559] border-0 hover:bg-white hover:text-[#F85559]">Shop All</button></div>
+    </section>
+<!-- =========== -->
+    <section class="bg-no-repeat hero w-full hero h-auto  text-white" style="background-image: url(./images/banner4.png);">
+      <div class="hero-overlay bg-opacity-90"></div>
+      <div>
+        <h3 class="text-5xl z-10 font-extrabold text-center pt-4 md:pt-12">Meet the team section</h3>
+        <p class=" md:w-5/12 z-10 mx-auto text-center py-4">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-y-6 md:gap-x-5 items-center py-4 mx-auto gap-x-6 pb-4 md:pb-12">
+          <!-- ====Person One============== -->
+          <div class="mx-auto flex flex-col gap-5 justify-center items-center">
+            <img src="./images/member1.png" alt="">
+            <h4 class="text-3xl font-bold">Awlad Hossain</h4>
+            <p>Fruits Expert</p>
+            <div class="flex gap-x-4">
+              <img src="./fbbbbbk 1.png" alt="">
+              <img src="./facebook 1.png" alt="">
+              <img src="./twiterk 1.png" alt="">
+            </div>
+          </div>
+          <!-- ====Person two============== -->
+          <div class="mx-auto flex flex-col gap-5 items-center">
+            <img src="./images/member1.png" alt="">
+            <h4 class="text-3xl font-bold">Awlad Hossain</h4>
+            <p>Fruits Expert</p>
+            <div class="flex gap-x-4">
+              <img src="./fbbbbbk 1.png" alt="">
+              <img src="./facebook 1.png" alt="">
+              <img src="./twiterk 1.png" alt="">
+            </div>
+          </div>
+          <!-- ====Person Three============== -->
+          <div class="mx-auto flex flex-col gap-5 items-center">
+            <img src="./images/member1.png" alt="">
+            <h4 class="text-3xl font-bold">Awlad Hossain</h4>
+            <p>Fruits Expert</p>
+            <div class="flex gap-x-4">
+              <img src="./fbbbbbk 1.png" alt="">
+              <img src="./facebook 1.png" alt="">
+              <img src="./twiterk 1.png" alt="">
+            </div>
+          </div>
+          <!-- ====Person Four============== -->
+          <div class="mx-auto flex flex-col gap-5 items-center">
+            <img src="./images/member1.png" alt="">
+            <h4 class="text-3xl font-bold">Awlad Hossain</h4>
+            <p>Fruits Expert</p>
+            <div class="flex gap-x-4">
+              <img src="./fbbbbbk 1.png" alt="">
+              <img src="./facebook 1.png" alt="">
+              <img src="./twiterk 1.png" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
     </Main>
     <!-- =========Footer Sections========== -->
     <footer>
